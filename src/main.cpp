@@ -10,18 +10,15 @@ void setup() {
 }
 
 void loop() {
+    Serial.println("Moving to 0°");
     myServo.write(0);
-    delay(600);
+    delay(400);
 
+    Serial.println("Moving to 45°");
     myServo.write(45);
-    delay(600);
+    delay(400);
 
+    Serial.println("Moving to 90°");
     myServo.write(90);
-    delay(600);
-
-    myServo.write(135);
-    delay(600);
-
-    myServo.write(180);
-    delay(600);
+    delay(400);
 }
