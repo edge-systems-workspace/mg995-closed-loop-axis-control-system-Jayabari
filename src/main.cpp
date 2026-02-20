@@ -3,8 +3,9 @@
 
 Servo myServo;
 
+const int servoPin = 9;
 void setup() {
-    myServo.attach(9);
+    myServo.attach(servoPin);
     Serial.begin(9600);
 }
 
